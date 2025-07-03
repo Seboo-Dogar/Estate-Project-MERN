@@ -105,11 +105,12 @@ function SignUp() {
     <div className="mt-4 text-center">
       <p className="text-sm text-gray-600">
         Already have an account?{" "}
-        <Link to="/login" className="text-slate-700 hover:underline font-medium">
+        <Link to="/sign-in" className="text-slate-700 hover:underline font-medium">
           Sign In
         </Link>
       </p>
     </div>
+    {error && <p className='text-red-500 mt-5'>{error}</p>}
   </div>
   )
 }

@@ -14,7 +14,7 @@ function Header() {
         </Link>
         <form
         //   onSubmit={handleSubmit}
-          className='bg-slate-100 p-3 rounded-lg flex items-center'
+          className='bg-white p-3 rounded-md flex items-center'
         >
           <input
             type='text'
