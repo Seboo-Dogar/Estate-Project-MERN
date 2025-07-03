@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { signInFailure, signInStart, signInSuccess } from '../redux/user/userSlice.js';
+import OAuth from '../components/OAuth.jsx';
 
 function SignIn() {
   const [formData, setFormData] = useState({});
@@ -84,6 +85,7 @@ function SignIn() {
       >
         {loading ? 'Signing In...' : 'Sign In'}
       </button>
+      <OAuth />
     </form>
 
     <div className="mt-4 text-center">
