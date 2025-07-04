@@ -14,7 +14,11 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true, 
-    }
+    },
+    avatar: {
+        type: String,
+        default: "https://cdn1.iconfinder.com/data/icons/facely-metapeople-3d-avatar-set/512/17._Designer.png",
+    },
 }, { timestamps: true });
 
 const User = mongoose.model("User", userSchema);
